@@ -24,7 +24,7 @@
                 <![CDATA[
               
 	
-  var optionQuoteUrl = "http://finance.yahoo.com/q?s=" + symbol,
+  var optionQuoteUrl = "http://finance.yahoo.com/q?s=" + symbol + "&bypass=true",
     yQuery = y.rest(optionQuoteUrl),
     data = yQuery.accept("text/html").get().response;
 
